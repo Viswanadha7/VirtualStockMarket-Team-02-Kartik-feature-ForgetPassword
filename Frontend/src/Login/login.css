@@ -1,0 +1,239 @@
+.login-container1 {
+    position: relative;
+    display: flex;
+}
+
+img[for="loginpage"] {
+    max-width: 100%; 
+  height: auto;
+  position: absolute; 
+  display: block; 
+  margin: 0 auto;
+}
+
+.overlay-contant1 {
+    z-index: 1;
+    object-fit: fill;
+}
+
+h2 {
+    color: white;
+    padding-left: 850px;
+    padding-top: 150px;
+    font-size: 35px;
+}
+
+h1[for="login"]{
+    color: white;
+    padding-left: 850px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+h1[for="email"]{
+    color: white;
+    padding-left: 00px;
+    padding-top: 12px;
+    font-size: 23px;
+}
+
+h1[for="password"]{
+    color: white;
+    padding-left: 0px;
+    padding-top: 12px;
+    font-size: 23px;
+}
+
+p {
+    color: white;
+}
+
+.form-container1 {
+    max-width: 200px;
+    padding-left: 850px;
+}
+
+label[for="email"] {
+    color: white;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.text1 {
+    margin-top: 3px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.checkbox-label1 {
+    margin-top: 10px;
+    display: block;
+}
+
+.checkbox-label1 input[type="checkbox"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid green;
+}
+
+.checkbox-label1 input[type="checkbox"]:checked {
+    background-color: green;
+}
+
+.checkbox-label1 span {
+    font-size: 12px;
+    color: white;
+    vertical-align: middle;
+}
+
+.forgot-password1 {
+    font-size: 12px;
+    color: green;
+    display: block;
+    margin-left: 45px;
+}
+
+.for-pass1 {
+    display: flex;
+    gap: 12px;
+    padding-top: 30px;
+}
+
+.for-pass1:hover {
+    color: blue;
+}
+
+.keepmein1
+{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    width: 250px;
+}
+
+#keepme1
+{
+    color: aliceblue;
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+.forgot-password1
+{
+    display: flex;
+     justify-content:flex-end;
+     gap : 0px;
+    font-size: 12px;
+    width: 130px;
+    margin-left: 45px;
+
+    
+}
+.forgetpassword1
+{
+    width : 00px;
+}
+
+.btn1
+{
+    background-color: white;
+    color : black;
+    margin-top: 30px;
+    /* background-color: transparent; */
+    border: 1px solid white;
+    padding: 8px;
+    width: 330px;
+    border-radius: 8px;
+}
+
+.signup1
+{
+    color : green;
+    font-size: 12px;
+    width : 30px;
+}
+#account1
+{
+    color: white;
+    font-size: 12px;
+    width : 110px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1440px) {
+    .form-container1 {
+        max-width: 150px;
+        padding-left: 800px;
+    }
+    h2{
+        padding-top: 200px;
+        padding-left: 800px;
+    }
+    h1[for="login"]{
+        padding-left: 800px;
+    }
+    img[for="loginpage"]
+    {
+        height: 135%;
+        max-width: 110%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .form-container1 {
+        max-width: 190px;
+        padding-left: 470px;
+    }
+    h2 {
+        font-size: 23px;
+        padding-top: 100px;
+        padding-left: 470px;
+    }
+    h1[for="login"]{
+        font-size: 24px;
+        padding-left: 470px;
+    }
+    img[for="loginpage"]{
+        height: 130%;
+    }
+    .forgot-password1{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-container1 {
+        max-width: 190px;
+        padding-left: 370px;
+    }
+    h2{
+        padding-left: 370px;
+    }
+    h1[for="login"]{
+        padding-left: 370px;
+    }
+    h1[for="email"],
+    h1[for="password"]
+    {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    img[for="loginpage"]{
+        height: 140%;
+    }
+    .for-pass1{
+        padding-top: 15px;
+    }
+    .btn1{
+        margin-top: 20px;
+    }
+}
