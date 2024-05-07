@@ -25,7 +25,7 @@ function ResetPass() {
             const response = await axios.post('http://localhost:8000/api/newpassword', { newPassword });
             
             // Redirect to PassSuccess component
-            return <Link to="/PassSuccess">Go to Password Success</Link>;
+            return;
         } catch (error) {
             setError("Something went wrong. Please try again later.");
             console.error('Error:', error);
@@ -33,32 +33,31 @@ function ResetPass() {
     };
 
     return (
-        <div className="login-container">
-            <img src={bg} alt='bg' />
-            <div className="overlay-contant">
-                <h1>Empowering Your Trades: Where <br /> Opportunities Meet Expertise</h1>
-                <p>Reset Your Password?</p>
-                <p id='small'>Enter new Password</p>
-                <div className="form-container">
+        <div className="login-container4">
+            <img for="resetPass" src={bg} alt='bg' />
+            <div className="overlay-contant4">
+                <h2 for="reset">Empowering Your Trades: Where <br /> Opportunities Meet Expertise</h2>
+                <h1 for="reset1">Reset Your Password?</h1>
+                <div className="form-container4">
                     <form onSubmit={handleResetPassword}>
-                        <label>New Password</label>
+                        <label for="reset2">New Password</label>
                         <div>
-                            <input type="password" placeholder='Enter New Password' value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
+                            <input type="password" className='text4' placeholder='Enter New Password' value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
                         </div>
-                        <label>Confirm Password</label>
+                        <label for="reset2">Confirm Password</label>
                         <div>
-                            <input type="password" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
+                            <input type="password" className='text4' placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
                         </div>
                         {error && <div className="error">{error}</div>}
                         <div>
-                            <button type="submit" className="btn">Save</button>
+                            <button type="submit" className="btn4"><Link to="/PassSuccess">Save</Link></button>
                         </div>
                     </form>
                 </div>
-                <div className="donthaveacc">
+                <div className="donthaveacc4">
                     <div>
-                        <span id="account">Don't have an account?</span>
-                        <Link to="/signup" className="signup">Signup</Link>
+                        <span id="account4">Don't have an account?</span>
+                        <Link to="/signup" className="signup4">Signup</Link>
                     </div>
                 </div>
             </div>

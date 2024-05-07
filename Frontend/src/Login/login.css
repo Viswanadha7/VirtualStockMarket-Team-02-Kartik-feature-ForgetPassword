@@ -5,15 +5,15 @@
 
 img[for="loginpage"] {
     max-width: 100%; 
-  height: auto;
-  position: absolute; 
-  display: block; 
-  margin: 0 auto;
+    height: auto;
+    position: absolute; 
+    display: block; 
+    margin: 0 auto;
 }
 
 .overlay-contant1 {
     z-index: 1;
-    object-fit: fill;
+    transform: translate(-505,50%);
 }
 
 h2 {
@@ -93,12 +93,7 @@ label[for="email"] {
     vertical-align: middle;
 }
 
-.forgot-password1 {
-    font-size: 12px;
-    color: green;
-    display: block;
-    margin-left: 45px;
-}
+
 
 .for-pass1 {
     display: flex;
@@ -127,14 +122,13 @@ label[for="email"] {
 
 .forgot-password1
 {
+    color: green;
     display: flex;
-     justify-content:flex-end;
-     gap : 0px;
+    justify-content:flex-end;
+    gap : 0px;
     font-size: 12px;
     width: 130px;
-    margin-left: 45px;
-
-    
+    margin-left: 2px; 
 }
 .forgetpassword1
 {
@@ -179,11 +173,6 @@ label[for="email"] {
     }
     h1[for="login"]{
         padding-left: 800px;
-    }
-    img[for="loginpage"]
-    {
-        height: 135%;
-        max-width: 110%;
     }
     
 }
@@ -235,5 +224,9 @@ label[for="email"] {
     }
     .btn1{
         margin-top: 20px;
+    }
+    img[for="loginpage"]
+    {
+        height: 125%;
     }
 }

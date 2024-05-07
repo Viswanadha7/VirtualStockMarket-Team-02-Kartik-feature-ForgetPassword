@@ -24,7 +24,7 @@ function ForgetPassword() {
         
       }
        
-      return <Link to="/getotp">Go to Get OTP</Link>;
+      return;
     } catch (error) {
       setError("Something went wrong. Please try again later.");
       console.error("Error:", error);
@@ -59,7 +59,7 @@ function ForgetPassword() {
                 onClick={handleForgotPassword}
                 className="btn2"
               >
-                Request OTP
+              <Link to="/getotp">Request OTP</Link>
               </button>
             </div>
           </form>
